@@ -1,0 +1,70 @@
+{
+  "name": "Akeno / simultaneous (candidate sites)",
+  "geography": {
+    "origin_lat": 35.785,
+    "origin_lon": 138.445,
+    "frequency_mhz": 923,
+    "tx_dbm": 13,
+    "sensitivity_dbm": -120,
+    "extra_loss_db": 15,
+    "antenna_gain_db": 0,
+    "profile_step_m": 10,
+    "dem_provider": "gsi_dem"
+  },
+  "radio": {
+    "air_rate_bps": 1758
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "West candidate",
+      "lat": 35.781,
+      "lon": 138.418,
+      "antenna_m": 2
+    },
+    {
+      "id": 2,
+      "label": "Central candidate",
+      "lat": 35.787,
+      "lon": 138.447,
+      "antenna_m": 5,
+      "relay": true
+    },
+    {
+      "id": 3,
+      "label": "East candidate",
+      "lat": 35.784,
+      "lon": 138.477,
+      "antenna_m": 2
+    }
+  ],
+  "messages": [
+    {
+      "at": 0,
+      "src": 1,
+      "dst": 2,
+      "payload": "temperature=19.8"
+    },
+    {
+      "at": 0,
+      "src": 3,
+      "dst": 2,
+      "payload": "temperature=17.3"
+    }
+  ],
+  "duration_s": 20,
+  "planner": {
+    "field_name": "明野 / Akeno",
+    "view": {
+      "lat": 35.785,
+      "lon": 138.445,
+      "zoom": 13,
+      "layer": "std"
+    },
+    "map_provider": "gsi",
+    "mode": "auto",
+    "base_id": 2,
+    "spacing_s": 3,
+    "compare": true
+  }
+}

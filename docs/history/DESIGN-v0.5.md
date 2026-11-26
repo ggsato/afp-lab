@@ -1,0 +1,8 @@
+# v0.5: Map Planner / design boundaries
+
+The placement editor is an experiment configuration authoring tool, not part of the AFP runtime. It edits only the geographic config; the existing terrain preparation freezes DEM provenance, local XY coordinates and predictions; the existing lab runner/collector consume the frozen scenario. No geographic or field-only information is injected into the node plan. The optional top-level `planner` metadata holds home/base selection, comparison preference, and editor mode; `lab.validate` ignores it when normalizing a scenario.
+
+- `planner.html`: self-contained map UI, Web Mercator tile indexing, click-to-place/move, local JSON import/export, prediction overlay. Direct background requests to GSI; no geocoding or external app libraries. `relief` is overzoomed past z15. Coordinates in the editor are rounded to six decimal places.
+- `planner.py`: loopback-only local HTTP service; same-origin and token checks for POST, allowlisted routes, pre-DEM validation. Reuses terrain.prepare, lab.record_scenario, recorder.write_trace/read_trace/collect, lab.write_report. Results use distinct directories and immutable frozen terrain per comparison. No synthetic fallback in production. Optional test-only dependency injection for artificial DEM.
+- `test_planner.py`: validation, frozen snapshots, roundtrip, comparison, loopback HTTP and report tests. Existing 43 tests unchanged. Browser UI exercised separately using offline fixtures; no claim of live GSI map verification.
+- Future: map grid coverage, uncertainty and empirical calibration, real node measurement overlay. No changes to AFP codec, retransmission, routing, real radio driver or recorder schema.

@@ -1,0 +1,94 @@
+test_codec (test_afp.TestAFP.test_codec) ... ok
+test_collision (test_afp.TestAFP.test_collision) ... ok
+test_relay_ack (test_afp.TestAFP.test_relay_ack) ... ok
+test_bad_dem_and_missing_base_fail (test_coverage.TestCoverage.test_bad_dem_and_missing_base_fail) ... ok
+test_extent_and_computation_limits (test_coverage.TestCoverage.test_extent_and_computation_limits) ... ok
+test_frozen_cell_provenance (test_coverage.TestCoverage.test_frozen_cell_provenance) ... ok
+test_geography_independent (test_coverage.TestCoverage.test_geography_independent) ... ok
+test_gsi_cache_fixture_offline (test_coverage.TestCoverage.test_gsi_cache_fixture_offline) ... ok
+test_http_coverage_save_and_inspect (test_coverage.TestCoverage.test_http_coverage_save_and_inspect) ... 127.0.0.1 - - [25/Nov/2026 11:42:55] "POST /api/coverage HTTP/1.1" 403 -
+Coverage: 20261125T114255Z-47a08140
+Coverage: 13/13 cells
+127.0.0.1 - - [25/Nov/2026 11:42:55] "POST /api/coverage HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 11:42:55] "POST /api/coverage/profile HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 11:42:55] "POST /api/coverage/profile HTTP/1.1" 400 -
+ok
+test_margin_reclassification_no_physics_change (test_coverage.TestCoverage.test_margin_reclassification_no_physics_change) ... ok
+test_missing_elevation_is_unknown_not_zero (test_coverage.TestCoverage.test_missing_elevation_is_unknown_not_zero) ... ok
+test_one_node_without_messages (test_coverage.TestCoverage.test_one_node_without_messages) ... ok
+test_reproducible_and_original_unchanged (test_coverage.TestCoverage.test_reproducible_and_original_unchanged) ... ok
+test_same_model_as_pair (test_coverage.TestCoverage.test_same_model_as_pair) ... ok
+test_custom_startup_and_provider_api (test_field_config.TestFieldConfig.test_custom_startup_and_provider_api) ... 127.0.0.1 - - [25/Nov/2026 11:42:56] "POST /api/run HTTP/1.1" 400 -
+ok
+test_default_is_data_selected (test_field_config.TestFieldConfig.test_default_is_data_selected) ... ok
+test_empty_and_one_node_drafts (test_field_config.TestFieldConfig.test_empty_and_one_node_drafts) ... ok
+test_field_read_roundtrip (test_field_config.TestFieldConfig.test_field_read_roundtrip) ... ok
+test_invalid_view_and_providers (test_field_config.TestFieldConfig.test_invalid_view_and_providers) ... ok
+test_legacy_without_metadata (test_field_config.TestFieldConfig.test_legacy_without_metadata) ... ok
+test_origin_change_and_outside_limit (test_field_config.TestFieldConfig.test_origin_change_and_outside_limit) ... ok
+test_other_region_end_to_end (test_field_config.TestFieldConfig.test_other_region_end_to_end) ... ok
+test_provider_adapter_compatible (test_field_config.TestFieldConfig.test_provider_adapter_compatible) ... ok
+test_view_does_not_change_terrain (test_field_config.TestFieldConfig.test_view_does_not_change_terrain) ... ok
+test_compare_existing_staggered (test_planner.TestPlanner.test_compare_existing_staggered) ... ok
+test_http_local_security_and_config (test_planner.TestPlanner.test_http_local_security_and_config) ... 127.0.0.1 - - [25/Nov/2026 11:42:56] "POST /api/run HTTP/1.1" 403 -
+127.0.0.1 - - [25/Nov/2026 11:42:56] "GET /README.md HTTP/1.1" 404 -
+Experiment: 20261125T114256Z-e94f90da
+127.0.0.1 - - [25/Nov/2026 11:42:56] "POST /api/run HTTP/1.1" 400 -
+ok
+test_http_run_report_success (test_planner.TestPlanner.test_http_run_report_success) ... Experiment: 20261125T114257Z-be5ab3f5
+127.0.0.1 - - [25/Nov/2026 11:42:57] "POST /api/run HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 11:42:57] "GET /runs/20261125T114257Z-be5ab3f5/index.html HTTP/1.1" 200 -
+ok
+test_original_geography_valid (test_planner.TestPlanner.test_original_geography_valid) ... ok
+test_reject_collocated_nodes (test_planner.TestPlanner.test_reject_collocated_nodes) ... ok
+test_reject_deleted_message_endpoint (test_planner.TestPlanner.test_reject_deleted_message_endpoint) ... ok
+test_reject_duplicate_id_before_dem (test_planner.TestPlanner.test_reject_duplicate_id_before_dem) ... ok
+test_reject_invalid_height_and_prepared (test_planner.TestPlanner.test_reject_invalid_height_and_prepared) ... ok
+test_reject_outside_region (test_planner.TestPlanner.test_reject_outside_region) ... ok
+test_roundtrip_and_frozen_terrain (test_planner.TestPlanner.test_roundtrip_and_frozen_terrain) ... ok
+test_cache_and_provenance (test_terrain.TestTerrain.test_cache_and_provenance) ... ok
+test_field_not_in_node_plan (test_terrain.TestTerrain.test_field_not_in_node_plan) ... ok
+test_frozen_scenario_validation (test_terrain.TestTerrain.test_frozen_scenario_validation) ... ok
+test_gsi_download_then_offline (test_terrain.TestTerrain.test_gsi_download_then_offline) ... GSI download: dem5a_png/15/28985/12891
+ok
+test_height_improves_clearance (test_terrain.TestTerrain.test_height_improves_clearance) ... ok
+test_nodata_fallback (test_terrain.TestTerrain.test_nodata_fallback) ... ok
+test_offline_replay (test_terrain.TestTerrain.test_offline_replay) ... ok
+test_path_physics (test_terrain.TestTerrain.test_path_physics) ... ok
+test_png_crc (test_terrain.TestTerrain.test_png_crc) ... ok
+test_png_signed_nodata (test_terrain.TestTerrain.test_png_signed_nodata) ... ok
+test_prepare_and_reproducibility (test_terrain.TestTerrain.test_prepare_and_reproducibility) ... ok
+test_same_terrain_stagger (test_terrain.TestTerrain.test_same_terrain_stagger) ... ok
+test_threshold_not_radius (test_terrain.TestTerrain.test_threshold_not_radius) ... ok
+test_addressed_filter (test_v02.TestV02.test_addressed_filter) ... ok
+test_channel_separation (test_v02.TestV02.test_channel_separation) ... ok
+test_filter_does_not_prevent_rf_collision (test_v02.TestV02.test_filter_does_not_prevent_rf_collision) ... ok
+test_half_duplex (test_v02.TestV02.test_half_duplex) ... ok
+test_hidden_collision_and_stagger (test_v02.TestV02.test_hidden_collision_and_stagger) ... ok
+test_invalid_scenarios (test_v02.TestV02.test_invalid_scenarios) ... ok
+test_queue_drop_and_recovery (test_v02.TestV02.test_queue_drop_and_recovery) ... ok
+test_relay_and_ack (test_v02.TestV02.test_relay_and_ack) ... ok
+test_report_embeds_data_safely (test_v02.TestV02.test_report_embeds_data_safely) ... ok
+test_reproducibility (test_v02.TestV02.test_reproducibility) ... ok
+test_ttl_and_no_relay (test_v02.TestV02.test_ttl_and_no_relay) ... ok
+test_uart_model_binary (test_v02.TestV02.test_uart_model_binary) ... ok
+test_clock_mapping (test_v03.TestV03.test_clock_mapping) ... ok
+test_host_queue_not_held_until_rf_done (test_v03.TestV03.test_host_queue_not_held_until_rf_done) ... ok
+test_incremental_local_sink (test_v03.TestV03.test_incremental_local_sink) ... ok
+test_jsonl_roundtrip (test_v03.TestV03.test_jsonl_roundtrip) ... ok
+test_local_config_no_field_data (test_v03.TestV03.test_local_config_no_field_data) ... ok
+test_local_not_oracle (test_v03.TestV03.test_local_not_oracle) ... ok
+test_missing_field_does_not_change_host_metrics (test_v03.TestV03.test_missing_field_does_not_change_host_metrics) ... ok
+test_missing_local_not_failure (test_v03.TestV03.test_missing_local_not_failure) ... ok
+test_node_runtime_non_simulator (test_v03.TestV03.test_node_runtime_non_simulator) ... ok
+test_observation_window_limits_execution (test_v03.TestV03.test_observation_window_limits_execution) ... ok
+test_physical_offline_collector (test_v03.TestV03.test_physical_offline_collector) ... ok
+test_reject_oracle_field_in_local_stream (test_v03.TestV03.test_reject_oracle_field_in_local_stream) ... ok
+test_start_skew (test_v03.TestV03.test_start_skew) ... ok
+test_truncated_stream_not_complete (test_v03.TestV03.test_truncated_stream_not_complete) ... ok
+test_unsynchronized_no_timeline_invention (test_v03.TestV03.test_unsynchronized_no_timeline_invention) ... ok
+
+----------------------------------------------------------------------
+Ran 74 tests in 2.979s
+
+OK

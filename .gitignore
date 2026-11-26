@@ -1,0 +1,30 @@
+# Python / editors / operating systems
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated reports, captured records, DEM cache and local data
+/results/
+/experiments/
+/prepared*/
+/dem-cache/
+/private/
+/local/
+/field-*.json
+/coverage*.json
+*.kml
+*.kmz
+*.gpx
+*.log
+.env
+.env.*
+*.pem
+*.key
+*.zip

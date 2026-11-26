@@ -1,0 +1,10 @@
+{
+  "name": "06 Independent node clocks",
+  "radio": {},
+  "nodes": [
+    {"id":1,"label":"Sensor A","x":0,"y":0,"clock_offset_us":8000000,"clock_drift_ppm":120},
+    {"id":2,"label":"Relay B","x":800,"y":0,"relay":true,"clock_offset_us":3000000,"clock_drift_ppm":-80},
+    {"id":3,"label":"Base C","x":1600,"y":0,"clock_offset_us":15000000,"clock_drift_ppm":200}
+  ],
+  "messages": [{"at":0,"src":1,"dst":3,"payload":"temperature=19.8"}]
+}

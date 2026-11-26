@@ -1,0 +1,13 @@
+{
+  "name": "04 UART queue saturation",
+  "radio": {"queue_capacity":2},
+  "nodes": [
+    {"id":1,"label":"Burst source","x":0,"y":0},
+    {"id":2,"label":"Base","x":600,"y":0}
+  ],
+  "messages": [
+    {"at":0,"src":1,"dst":2,"payload":"sample 1"},
+    {"at":0,"src":1,"dst":2,"payload":"sample 2"},
+    {"at":0,"src":1,"dst":2,"payload":"sample 3"}
+  ]
+}

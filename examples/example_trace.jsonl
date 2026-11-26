@@ -1,0 +1,111 @@
+{
+  "scenario": "relay",
+  "delivered": 1,
+  "acked": true,
+  "events": [
+    {
+      "t": 0.0,
+      "event": "tx",
+      "sender": 1,
+      "bytes": 29,
+      "duration": 0.181968
+    },
+    {
+      "t": 0.181968,
+      "event": "rx",
+      "sender": 1,
+      "receiver": 2
+    },
+    {
+      "t": 0.281968,
+      "event": "tx",
+      "sender": 2,
+      "bytes": 29,
+      "duration": 0.181968
+    },
+    {
+      "t": 0.463936,
+      "event": "rx",
+      "sender": 2,
+      "receiver": 1
+    },
+    {
+      "t": 0.463936,
+      "event": "rx",
+      "sender": 2,
+      "receiver": 3
+    },
+    {
+      "t": 0.663936,
+      "event": "tx",
+      "sender": 3,
+      "bytes": 13,
+      "duration": 0.109158
+    },
+    {
+      "t": 0.773094,
+      "event": "rx",
+      "sender": 3,
+      "receiver": 2
+    },
+    {
+      "t": 0.873094,
+      "event": "tx",
+      "sender": 2,
+      "bytes": 13,
+      "duration": 0.109158
+    },
+    {
+      "t": 0.982253,
+      "event": "rx",
+      "sender": 2,
+      "receiver": 1
+    },
+    {
+      "t": 0.982253,
+      "event": "ack",
+      "node": 1,
+      "peer": 3,
+      "seq": 1
+    },
+    {
+      "t": 0.982253,
+      "event": "rx",
+      "sender": 2,
+      "receiver": 3
+    }
+  ]
+}
+{
+  "scenario": "collision",
+  "delivered": 0,
+  "acked": false,
+  "events": [
+    {
+      "t": 0.0,
+      "event": "tx",
+      "sender": 1,
+      "bytes": 29,
+      "duration": 0.181968
+    },
+    {
+      "t": 0.0,
+      "event": "tx",
+      "sender": 3,
+      "bytes": 23,
+      "duration": 0.154664
+    },
+    {
+      "t": 0.154664,
+      "event": "collision_or_half_duplex",
+      "sender": 3,
+      "receiver": 2
+    },
+    {
+      "t": 0.181968,
+      "event": "collision_or_half_duplex",
+      "sender": 1,
+      "receiver": 2
+    }
+  ]
+}

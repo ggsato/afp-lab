@@ -1,0 +1,10 @@
+{
+  "name": "03 Link address filtering",
+  "radio": {},
+  "nodes": [
+    {"id":1,"label":"Sensor A","x":0,"y":0},
+    {"id":2,"label":"Base B","x":600,"y":200},
+    {"id":3,"label":"Other C","x":300,"y":-300}
+  ],
+  "messages": [{"at":0,"src":1,"dst":2,"link_dst":2,"payload":"humidity=43"}]
+}

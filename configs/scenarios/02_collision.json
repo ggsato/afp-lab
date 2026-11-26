@@ -1,0 +1,13 @@
+{
+  "name": "02 Hidden-node collision",
+  "radio": {},
+  "nodes": [
+    {"id":1,"label":"Sensor A","x":0,"y":0},
+    {"id":2,"label":"Relay B","x":800,"y":0,"relay":true},
+    {"id":3,"label":"Sensor C","x":1600,"y":0}
+  ],
+  "messages": [
+    {"at":0,"src":1,"dst":3,"payload":"temperature=19.8"},
+    {"at":0,"src":3,"dst":1,"payload":"concurrent"}
+  ]
+}

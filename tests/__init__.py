@@ -1,0 +1,1 @@
+"""AFP Lab regression tests."""
