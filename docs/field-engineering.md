@@ -2,6 +2,10 @@
 
 **Research plan, not validated deployment instructions.** This is the third pillar alongside Protocol Research and Radio Field Research. It addresses a different question: how can local people install and maintain an observation network affordably and safely?
 
+## Equipment design records / 設備設計資料
+
+- [FE-PWR-001 — Modular Solar Power Supply / モジュール組立式独立太陽光電源](field-engineering/power-module.md): Rev. 0.1, procurement complete, prototype not yet validated. Covers the shared 1S solar power module, component selection, assembly design and planned tests for FE-05/FE-06.
+
 ## Candidate roles
 
 | Role | Purpose | Questions |
