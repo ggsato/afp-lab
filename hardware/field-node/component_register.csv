@@ -1,0 +1,19 @@
+﻿group,parent,origin_x_mm,origin_y_mm,origin_z_mm,fidelity_and_limitations
+01_Enclosure_BASE,,0.0,0.0,0.0,BCAP253515T simplified; no gasket/hinge exact fit
+02_Backplate_BMP2535P,,0.0,0.0,12.0,Manufacturer dimensions; corner profile simplified
+03_Power_tray,,-36.0,83.0,16.0,Proposed PC tray 126 x 76; hole layout provisional
+03a_Tray_fixed_rails,02_Backplate_BMP2535P,-36.0,83.0,16.0,"Proposed fixed rails; retention stop, actual drilling and screw lengths TBD"
+04_18650_holder,03_Power_tray,-49.0,101.0,22.5,75 mm molded holder; total product envelope 80 x 21 x 18.6; side profile approximated
+05_18650_cell,04_18650_holder,-49.0,101.0,33.2,Nominal 18.2 x 65 mm cell; measure chosen cell
+06_JT100_surface_NTC,04_18650_holder,-49.0,101.0,42.300000000000004,Taped sensor head; lead path illustrative; no applied clamp pressure
+07_BQ25185_6091,03_Power_tray,-18.0,67.0,25.5,32 x 26.3 x 7.2 mm envelope; connector positions approximate
+08_MiniBoost_4654,03_Power_tray,12.0,67.0,25.5,Board outline and XY component centers from official Eagle; component Z proxies
+09_Inline_fuse_8601,03_Power_tray,-70.0,65.0,29.0,SCHURTER 8601.2000 approximate reserved envelope; confirm exact length
+10_Power_wiring,03_Power_tray,-36.0,83.0,22.5,Illustrative wire routing; polarity and gauge verified separately
+11_ATOM_Lite_C008,,34.0,-44.0,22.0,24 x 24 x 9.5 mm; screw and port locations approximated
+12_LoRa_E220_U170,,79.0,-8.0,20.0,71.4 x 24 x 8 mm; shell/connector details approximated
+13_Stock_antenna_110mm,12_LoRa_E220_U170,79.0,27.700000000000003,24.0,110 mm total manufacturer length; diameter and SMA geometry proxies
+14_Node_wiring,,0.0,0.0,20.0,Illustrative wiring paths; 200mm Grove cable with service slack
+15_Cover_PC,,0.0,0.0,120.0,Transparent top cover nominal 250 x 350 x 30; geometry simplified
+16_PV_1_SY_M2W,15_Cover_PC,-43.0,66.0,143.0,Primary panel; 116 x 116 x 3 mm
+16_PV_2_SY_M2W,15_Cover_PC,-43.0,-58.0,143.0,Optional second panel (hide for 2W); 116 x 116 x 3 mm
