@@ -4,11 +4,17 @@
 
 ## 目的と状態
 
-FE-PWR-001 Rev.0.1で選定した電源とATOM Lite / LoRaE220-920を、手持ちのタカチ BCAP253515T / BMP2535P に実装するための3Dアセンブリです。完成回路・安全設計・実寸部品の最終嵌合を保証する製作用データではありません。GitHubへの反映は未実施です。
+FE-PWR-001 Rev.0.1で選定した電源とATOM Lite / LoRaE220-920を、手持ちのタカチ BCAP253515T / BMP2535P に実装するための3Dアセンブリです。完成回路・安全設計・実寸部品の最終嵌合を保証する製作用データではありません。2026-11-27にGitHubへ初期モデルを公開しました。実機製作・安全性検証は未完了です。
+
+関連資料：[Field Engineering](../../docs/field-engineering.md) / [FE-PWR-001 電源設計・BOM](../../docs/field-engineering/power-module.md)
+
+![FE-NODE-001 Rev.0.2 3D assembly preview](AFP_FE_Node_Rev0_2_preview.png)
+
+**English summary:** Reproducible, dimension-based concept assembly for the AFP Lab field node. Includes editable GLB scenes, a STEP assembly, parametric Python source and a component register. Geometry includes approximations; it is not a fabrication-ready or safety-validated design.
 
 ## Blenderで開く
 
-1. ZIPを展開する。
+1. リポジトリをクローンするか、GitHubのCode > Download ZIPから展開する。対象フォルダは `hardware/field-node/`。単体確認なら [inspection.glb](AFP_FE_Node_Rev0_2_inspection.glb) をダウンロードする。
 2. Blenderで新規ファイルを開き、File > Import > glTF 2.0 (.glb/.gltf) から任意のGLBを読み込む。
 3. Aで全選択、Home（Frame All）で全体を表示。Material PreviewまたはSolidのMaterial色で色分けを確認する。
 4. Scene Properties > UnitsをMetric、Unit Scale 1.0、Length Millimetersに設定する。GLBの座標はメートル単位で保存済みなので追加の倍率変更は不要。

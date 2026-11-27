@@ -6,6 +6,10 @@
 
 - [FE-PWR-001 — Modular Solar Power Supply / モジュール組立式独立太陽光電源](field-engineering/power-module.md): Rev. 0.1, procurement complete, prototype not yet validated. Covers the shared 1S solar power module, component selection, assembly design and planned tests for FE-05/FE-06.
 
+- [FE-NODE-001 — Field Node Assembly / フィールド端末3D実装設計](../hardware/field-node/README.md): Rev. 0.2 concept. Dimension-based enclosure and mounting layout, component register, GLB/STEP models and reproducible CAD source. Not fabrication-ready or validated for unattended use.
+
+  [3D assembly preview](../hardware/field-node/AFP_FE_Node_Rev0_2_preview.png) · [Blender inspection model (GLB)](../hardware/field-node/AFP_FE_Node_Rev0_2_inspection.glb) · [Mechanical model (STEP)](../hardware/field-node/AFP_FE_Node_Rev0_2_mechanical.step)
+
 ## Candidate roles
 
 | Role | Purpose | Questions |
